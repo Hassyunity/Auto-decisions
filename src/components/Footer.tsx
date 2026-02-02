@@ -18,6 +18,12 @@ export default function Footer() {
             Nous concevons des solutions d’automatisation intelligentes basées
             sur n8n pour optimiser vos processus métiers critiques.
           </p>
+
+          {/* Développeur / Créateur */}
+          <p className="footer-dev">
+            Développé par Hassy Tsihoarana, développeur web
+            fullstack passionné par l’ IA, l'automatisation et les workflows intelligents.
+          </p>
         </div>
 
         {/* Navigation */}

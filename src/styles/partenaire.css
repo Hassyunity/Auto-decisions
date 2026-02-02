@@ -1,118 +1,99 @@
 .partenaires {
   padding: 100px 24px;
   background: var(--bg-dark);
+  color: white;
 }
 
 .partenaires-container {
   max-width: 1200px;
   margin: 0 auto;
-}
-
-/* HEADER */
-.partenaires-header {
   text-align: center;
-  max-width: 760px;
-  margin: 0 auto 80px;
 }
 
 .partenaires-header h1 {
-  font-size: clamp(34px, 4vw, 52px);
+  font-size: clamp(38px, 5vw, 60px);
   font-weight: 800;
+  margin-bottom: 16px;
 }
 
 .partenaires-header p {
-  margin-top: 22px;
-  font-size: 17px;
-  line-height: 1.7;
+  font-size: 18px;
   color: var(--text-muted);
+  margin-bottom: 60px;
+  line-height: 1.6;
 }
 
 /* GRID */
 .partenaires-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 32px;
+  gap: 36px;
 }
 
-/* CARD */
 .partenaire-card {
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.05);
   border: 1px solid var(--border-soft);
   border-radius: 20px;
-  padding: 36px 28px;
+  padding: 28px 24px;
   text-align: center;
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .partenaire-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 30px rgba(22, 115, 255, 0.3);
 }
 
-/* LOGO */
 .partenaire-logo {
-  height: 64px;
+  height: 60px;
+  margin-bottom: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 22px;
 }
 
 .partenaire-logo img {
   max-height: 100%;
-  max-width: 140px;
+  max-width: 100%;
   object-fit: contain;
-  filter: grayscale(100%);
-  opacity: 0.85;
-  transition: filter 0.3s ease, opacity 0.3s ease;
 }
 
-.partenaire-card:hover img {
-  filter: grayscale(0%);
-  opacity: 1;
-}
-
-/* TEXT */
 .partenaire-card h3 {
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .partenaire-card p {
   font-size: 14px;
-  line-height: 1.6;
   color: var(--text-muted);
-  margin-bottom: 18px;
+  margin-bottom: 14px;
+  line-height: 1.5;
 }
 
-/* CATEGORY */
 .partenaire-category {
-  display: inline-block;
   font-size: 12px;
-  font-weight: 700;
-  padding: 6px 14px;
+  padding: 4px 12px;
   border-radius: 999px;
-  background: rgba(22, 115, 255, 0.15);
+  background: rgba(22, 115, 255, 0.2);
   color: var(--blue);
+  font-weight: 600;
 }
 
-/* TRUST */
+/* TRUST BLOCK */
 .partenaires-trust {
-  margin-top: 120px;
   text-align: center;
+  margin-top: 80px;
 }
 
 .partenaires-trust h2 {
-  font-size: clamp(28px, 3vw, 40px);
+  font-size: 28px;
   font-weight: 800;
+  margin-bottom: 16px;
 }
 
 .partenaires-trust p {
-  margin-top: 20px;
   font-size: 16px;
   color: var(--text-muted);
-  max-width: 640px;
-  margin-left: auto;
-  margin-right: auto;
+  line-height: 1.6;
 }

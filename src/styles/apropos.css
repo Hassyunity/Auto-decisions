@@ -39,3 +39,28 @@
   line-height: 1.7;
   color: var(--text-muted);
 }
+
+.apropos-dev {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 15px;
+  color: var(--text-muted);
+}
+
+.apropos-dev strong {
+  color: var(--blue);
+}
+
+.apropos-dev a {
+  display: inline-block;
+  margin-top: 8px;
+  font-weight: 600;
+  color: var(--blue);
+  text-decoration: underline;
+  transition: color 0.25s ease;
+}
+
+.apropos-dev a:hover {
+  color: var(--blue-hover);
+}
+

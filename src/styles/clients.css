@@ -1,54 +1,72 @@
 .clients {
   padding: 100px 24px;
   background: var(--bg-dark);
+  color: white;
 }
 
 .clients-container {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
-}
-
-.clients-header {
   text-align: center;
-  max-width: 700px;
-  margin: 0 auto 80px;
 }
 
 .clients-header h1 {
-  font-size: clamp(36px, 4vw, 52px);
+  font-size: clamp(38px, 5vw, 60px);
   font-weight: 800;
+  margin-bottom: 16px;
 }
 
 .clients-header p {
-  margin-top: 20px;
+  font-size: 18px;
   color: var(--text-muted);
+  margin-bottom: 60px;
+  line-height: 1.6;
 }
 
+/* GRID */
 .clients-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 36px;
 }
 
 .client-card {
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.05);
   border: 1px solid var(--border-soft);
-  border-radius: 18px;
-  padding: 36px;
+  border-radius: 20px;
+  padding: 36px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.client-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 30px rgba(22, 115, 255, 0.3);
 }
 
 .client-quote {
   font-size: 16px;
-  line-height: 1.7;
+  font-style: italic;
+  line-height: 1.6;
   margin-bottom: 24px;
+  color: var(--text-muted);
+}
+
+.client-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
 }
 
 .client-meta strong {
-  display: block;
+  font-size: 16px;
   font-weight: 700;
 }
 
 .client-meta span {
-  font-size: 13px;
+  font-size: 14px;
   color: var(--text-muted);
 }

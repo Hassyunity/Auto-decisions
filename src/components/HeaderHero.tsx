@@ -21,8 +21,8 @@ export default function HeaderHero() {
           <div className="logo">
             <div className="logo-box">H</div>
             <div>
-              <div className="logo-text">Auto |</div>
-              <div className="logo-sub">DECISIONS</div>
+              <div className="logo-text">Auto | DECISIONS</div>
+              <div className="logo-sub">by_Hassy</div>
             </div>
           </div>
 

@@ -3,32 +3,32 @@ import "../styles/produits.css";
 const produits = [
   {
     title: "RH & Recrutement",
-    desc: "Automatisez la gestion des candidatures, le parsing de CV et l’onboarding des employés.",
+    desc: "Recrutez plus vite et mieux : automatisez le tri des CV, le scoring des candidats et l’onboarding.",
     icon: "🧑‍💼",
   },
   {
     title: "Finance & Facturation",
-    desc: "Traitement automatique des factures, rapprochement comptable et alertes de paiement.",
+    desc: "Gagnez du temps et réduisez les erreurs : automatisez vos factures, rapprochements et alertes de paiement.",
     icon: "💰",
   },
   {
     title: "Marketing Automation",
-    desc: "Déclenchez des campagnes, synchronisez vos leads et automatisez vos actions marketing.",
+    desc: "Transformez vos leads en clients : déclenchez des campagnes, synchronisez vos CRM et boostez vos conversions.",
     icon: "📢",
   },
   {
     title: "Support & Tickets",
-    desc: "Centralisez les demandes clients, priorisez les tickets et automatisez les réponses.",
+    desc: "Offrez un support réactif : centralisez, priorisez et automatisez vos réponses aux demandes clients.",
     icon: "🧾",
   },
   {
     title: "Reporting & Data",
-    desc: "Collectez, transformez et diffusez vos données automatiquement en temps réel.",
+    desc: "Décidez plus vite : collectez, analysez et partagez vos données automatiquement et en temps réel.",
     icon: "📊",
   },
   {
     title: "Intégrations & APIs",
-    desc: "Connectez vos outils SaaS, APIs et systèmes internes via des workflows n8n.",
+    desc: "Connectez tous vos outils : SaaS, APIs et systèmes internes via des workflows intelligents et robustes.",
     icon: "🔗",
   },
 ];
@@ -37,10 +37,10 @@ export default function Produits() {
   return (
     <section className="produits">
       <div className="produits-container">
-        <h1>Nos Produits d’Automatisation</h1>
+        <h1>Boostez votre entreprise avec nos solutions d’automatisation</h1>
         <p className="produits-subtitle">
-          Des solutions basées sur n8n pour automatiser vos processus métier
-          critiques.
+          Des workflows n8n puissants pour transformer vos processus critiques
+          en expériences fluides et efficaces.
         </p>
 
         <div className="produits-grid">

@@ -105,6 +105,14 @@
   opacity: 0.8;
 }
 
+.footer-dev {
+  margin-top: 18px;
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  font-style: italic;
+}
+
 /* RESPONSIVE */
 @media (max-width: 1024px) {
   .footer-container {

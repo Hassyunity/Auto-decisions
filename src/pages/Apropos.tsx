@@ -36,6 +36,19 @@ export default function Apropos() {
             </p>
           </div>
         </div>
+
+        {/* Développeur / Portfolio */}
+        <div className="apropos-dev">
+          <p>
+            Développé par <strong>Rado Hasimanana Fetra Tsihoarana</strong>, 
+            développeur web fullstack passionné par l’IA, l'automatisation et les workflows.
+          </p>
+          <p>
+            <a href="https://hassy.onrender.com/" target="_blank" rel="noopener noreferrer">
+              Voir mon portfolio
+            </a>
+          </p>
+        </div>
       </div>
     </section>
   );

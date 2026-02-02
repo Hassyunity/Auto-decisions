@@ -3,34 +3,34 @@ import "../styles/solutions.css";
 const solutions = [
   {
     title: "Automatisation RH",
-    desc: "Optimisez le recrutement, l’onboarding et la gestion RH grâce à des workflows n8n automatisés et sécurisés.",
+    desc: "Recrutez plus vite et efficacement : tri automatique des CV, scoring intelligent et onboarding simplifié.",
     points: [
-      "Parsing automatique des CV",
-      "Scoring candidats",
-      "Notifications RH & managers",
-      "Onboarding automatisé",
+      "📝 Parsing automatique des CV",
+      "⭐ Scoring candidats avancé",
+      "📣 Notifications RH & managers",
+      "🚀 Onboarding automatisé",
     ],
     image: "/images/n8n.png",
   },
   {
     title: "Finance & Facturation",
-    desc: "Automatisez la gestion financière pour réduire les erreurs et accélérer les processus comptables.",
+    desc: "Gérez vos finances sans erreurs : automatisation des factures, rapprochements et alertes de paiement.",
     points: [
-      "Traitement automatique des factures",
-      "Rapprochement comptable",
-      "Alertes de paiement",
-      "Export ERP / outils comptables",
+      "💸 Traitement automatique des factures",
+      "📊 Rapprochement comptable",
+      "⏰ Alertes de paiement",
+      "🔗 Export ERP / outils comptables",
     ],
     image: "/images/n8n.png",
   },
   {
     title: "Marketing Automation",
-    desc: "Synchronisez vos outils marketing et déclenchez des actions intelligentes basées sur vos données.",
+    desc: "Boostez vos ventes et leads : campagnes automatiques, synchronisation CRM et reporting instantané.",
     points: [
-      "Campagnes email automatisées",
-      "Synchronisation CRM",
-      "Lead scoring",
-      "Reporting marketing",
+      "📧 Campagnes email automatisées",
+      "🔄 Synchronisation CRM",
+      "🎯 Lead scoring intelligent",
+      "📈 Reporting marketing",
     ],
     image: "/images/n8n.png",
   },
@@ -42,10 +42,10 @@ export default function Solutions() {
       <div className="solutions-container">
         {/* HERO */}
         <header className="solutions-header">
-          <h1>Nos Solutions d’Automatisation</h1>
+          <h1>Transformez vos processus avec nos workflows n8n</h1>
           <p>
-            Des workflows n8n robustes, évolutifs et conçus pour automatiser vos
-            processus métier de bout en bout.
+            Des solutions robustes, évolutives et simples à déployer pour
+            automatiser vos processus critiques et booster votre productivité.
           </p>
         </header>
 
@@ -62,10 +62,10 @@ export default function Solutions() {
                 <p>{s.desc}</p>
                 <ul>
                   {s.points.map((p) => (
-                    <li key={p}>✔ {p}</li>
+                    <li key={p}>{p}</li>
                   ))}
                 </ul>
-                <button className="solution-link">Voir la solution</button>
+                <button className="solution-link">Découvrir la solution</button>
               </div>
 
               {/* IMAGE */}
@@ -78,10 +78,10 @@ export default function Solutions() {
 
         {/* CTA */}
         <div className="solutions-cta">
-          <h2>Voyez vos processus fonctionner automatiquement</h2>
+          <h2>Laissez vos processus se gérer automatiquement</h2>
           <p>
-            Nos workflows n8n sont conçus pour être sécurisés, maintenables et
-            prêts à évoluer avec votre entreprise.
+            Nos workflows n8n sont sécurisés, maintenables et prêts à évoluer avec
+            votre entreprise pour maximiser votre efficacité.
           </p>
           <button className="cta-main">Demander une démo</button>
         </div>
