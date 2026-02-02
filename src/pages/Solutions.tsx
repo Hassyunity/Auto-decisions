@@ -10,7 +10,7 @@ const solutions = [
       "Notifications RH & managers",
       "Onboarding automatisé",
     ],
-    image: "../../public/images/n8n.png",
+    image: "/images/n8n.png",
   },
   {
     title: "Finance & Facturation",
@@ -21,7 +21,7 @@ const solutions = [
       "Alertes de paiement",
       "Export ERP / outils comptables",
     ],
-    image: "../../public/images/n8n.png",
+    image: "/images/n8n.png",
   },
   {
     title: "Marketing Automation",
@@ -32,7 +32,7 @@ const solutions = [
       "Lead scoring",
       "Reporting marketing",
     ],
-    image: "../../public/images/n8n.png",
+    image: "/images/n8n.png",
   },
 ];
 
