@@ -1,0 +1,118 @@
+.partenaires {
+  padding: 100px 24px;
+  background: var(--bg-dark);
+}
+
+.partenaires-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.partenaires-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 80px;
+}
+
+.partenaires-header h1 {
+  font-size: clamp(34px, 4vw, 52px);
+  font-weight: 800;
+}
+
+.partenaires-header p {
+  margin-top: 22px;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+/* GRID */
+.partenaires-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+}
+
+/* CARD */
+.partenaire-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-soft);
+  border-radius: 20px;
+  padding: 36px 28px;
+  text-align: center;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.partenaire-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+}
+
+/* LOGO */
+.partenaire-logo {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+
+.partenaire-logo img {
+  max-height: 100%;
+  max-width: 140px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.85;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.partenaire-card:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* TEXT */
+.partenaire-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.partenaire-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin-bottom: 18px;
+}
+
+/* CATEGORY */
+.partenaire-category {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(22, 115, 255, 0.15);
+  color: var(--blue);
+}
+
+/* TRUST */
+.partenaires-trust {
+  margin-top: 120px;
+  text-align: center;
+}
+
+.partenaires-trust h2 {
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 800;
+}
+
+.partenaires-trust p {
+  margin-top: 20px;
+  font-size: 16px;
+  color: var(--text-muted);
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}

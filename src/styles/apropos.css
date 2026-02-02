@@ -1,0 +1,41 @@
+.apropos {
+  padding: 110px 24px;
+  background: var(--bg-dark);
+}
+
+.apropos-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.apropos h1 {
+  font-size: clamp(38px, 4vw, 54px);
+  font-weight: 800;
+}
+
+.apropos-lead {
+  margin-top: 28px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--text-muted);
+  max-width: 720px;
+}
+
+.apropos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 48px;
+  margin-top: 80px;
+}
+
+.apropos-grid h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.apropos-grid p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-muted);
+}

@@ -1,0 +1,253 @@
+/* =====================
+   VARIABLES
+===================== */
+:root {
+  --bg-top: #06080d;
+  --bg-dark: #0b1220;
+  --bg-hero: #0f1a2b;
+  --blue: #1673ff;
+  --blue-hover: #0f5fe0;
+  --text-muted: #cfd5e3;
+  --border-soft: rgba(255, 255, 255, 0.08);
+}
+
+/* =====================
+   RESET
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Inter, system-ui, sans-serif;
+  background: var(--bg-dark);
+  color: white;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  font-family: inherit;
+}
+
+/* =====================
+   TOP LINE (ligne fine haute)
+===================== */
+.top-line {
+  margin-top: 10px;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  height: 1px;
+  background: #ff8a3d;
+}
+
+/* =====================
+   NAVBAR
+===================== */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: linear-gradient(to bottom, #06080d, #0b1220);
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.navbar-container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 18px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* =====================
+   LOGO
+===================== */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo-box {
+  width: 34px;
+  height: 34px;
+  background: linear-gradient(135deg, #1673ff, #3c82ff);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
+
+.logo-text {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.logo-sub {
+  font-size: 12px;
+  font-weight: 700;
+  color: #ff8a3d;
+  letter-spacing: 1px;
+}
+
+/* =====================
+   MENU (underline exact)
+===================== */
+.nav-menu {
+  display: flex;
+  gap: 34px;
+}
+
+.nav-menu button {
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-muted);
+  padding-bottom: 6px;
+}
+
+.nav-menu button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background: var(--blue);
+  transition: width 0.25s ease;
+}
+
+.nav-menu button:hover {
+  color: white;
+}
+
+.nav-menu button:hover::after {
+  width: 100%;
+}
+
+/* =====================
+   ACTIONS
+===================== */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.lang {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.cta-outline {
+  padding: 8px 20px;
+  border-radius: 999px;
+  border: 1px solid var(--blue);
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.cta-outline:hover {
+  background: var(--blue);
+  color: white;
+}
+
+.nav-menu a {
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-muted);
+  padding-bottom: 6px;
+  text-decoration: none;
+}
+
+.nav-menu a.active {
+  color: white;
+}
+
+.nav-menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background: var(--blue);
+  transition: width 0.25s ease;
+}
+
+.nav-menu a:hover::after,
+.nav-menu a.active::after {
+  width: 100%;
+}
+
+
+/* =====================
+   HERO
+===================== */
+.hero {
+  background: radial-gradient(
+      circle at top,
+      rgba(22, 115, 255, 0.15),
+      transparent 45%
+    ),
+    linear-gradient(to bottom, var(--bg-dark), var(--bg-hero));
+  padding: 10px 24px 10px;
+  text-align: center;
+}
+
+.hero-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 5vw, 62px);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.hero p {
+  margin-top: 28px;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+.cta-main {
+  margin-top: 44px;
+  padding: 16px 46px;
+  border-radius: 999px;
+  background: var(--blue);
+  font-size: 18px;
+  font-weight: 700;
+  box-shadow: 0 12px 30px rgba(22, 115, 255, 0.35);
+  transition: all 0.25s ease;
+}
+
+.cta-main:hover {
+  background: var(--blue-hover);
+  transform: translateY(-2px);
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 1024px) {
+  .nav-menu {
+    display: none;
+  }
+}
