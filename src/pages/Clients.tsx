@@ -5,13 +5,13 @@ const clients = [
     name: "Entreprise RH",
     quote:
       "L’automatisation a réduit notre temps de traitement des CV de 70 %. Un gain immédiat.",
-    role: "Responsable RH",
+    role: "Responsable Recrutement",
   },
   {
     name: "Société Finance",
     quote:
       "La gestion des factures et des paiements est devenue fiable et sans erreur.",
-    role: "Directeur Financier",
+    role: "responsable Financier",
   },
   {
     name: "Startup SaaS",

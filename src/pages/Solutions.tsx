@@ -21,7 +21,7 @@ const solutions = [
       "⏰ Alertes de paiement",
       "🔗 Export ERP / outils comptables",
     ],
-    image: "/images/n8n.png",
+    image: "/images/Facturations.png",
   },
   {
     title: "Marketing Automation",
@@ -32,7 +32,7 @@ const solutions = [
       "🎯 Lead scoring intelligent",
       "📈 Reporting marketing",
     ],
-    image: "/images/n8n.png",
+    image: "/images/coming.jpg",
   },
 ];
 
