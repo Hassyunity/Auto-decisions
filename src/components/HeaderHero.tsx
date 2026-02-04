@@ -41,7 +41,14 @@ export default function HeaderHero() {
 
           {/* ACTIONS */}
           <div className="nav-actions">
-            <div className="lang">🌐 FR</div>
+            <a
+              href="https://hassy.onrender.com"
+              className="lang"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              🌐 Portfolio
+            </a>
             <button className="cta-outline">DEMANDER UNE DÉMO</button>
 
             {/* HAMBURGER MOBILE */}

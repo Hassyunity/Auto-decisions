@@ -146,8 +146,8 @@ button {
   display: flex;
   align-items: center;
   gap: 6px;
+  color: #ff8a3d;
   font-size: 14px;
-  color: var(--text-muted);
 }
 
 .cta-outline {
